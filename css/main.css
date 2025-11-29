@@ -1,0 +1,1061 @@
+:root,
+:host {
+  --as-red50: oklch(97.1% 0.013 17.38);
+  --as-red100: oklch(93.6% 0.032 17.717);
+  --as-red500: oklch(63.7% 0.237 25.331);
+  --as-red600: oklch(57.7% 0.245 27.325);
+  --as-red800: oklch(44.4% 0.177 26.899);
+  --as-orange50: oklch(98% 0.016 73.684);
+  --as-orange100: #ffedd4;
+  --as-orange200: oklch(90.1% 0.076 70.697);
+  --as-orange300: oklch(83.7% 0.128 66.29);
+  --as-orange500: oklch(70.5% 0.213 47.604);
+  --as-orange600: oklch(64.6% 0.222 41.116);
+  --as-amber50: oklch(98.7% 0.022 95.277);
+  --as-amber400: oklch(82.8% 0.189 84.429);
+  --as-amber600: oklch(66.6% 0.179 58.318);
+  --as-yellow50: oklch(98.7% 0.026 102.212);
+  --as-yellow100: oklch(97.3% 0.071 103.193);
+  --as-yellow400: oklch(85.2% 0.199 91.936);
+  --as-yellow600: oklch(68.1% 0.162 75.834);
+  --as-green100: oklch(96.2% 0.044 156.743);
+  --as-green600: oklch(62.7% 0.194 149.214);
+  --as-green700: oklch(52.7% 0.154 150.069);
+  --as-blue100: oklch(93.2% 0.032 255.585);
+  --as-blue500: oklch(62.3% 0.214 259.815);
+  --as-blue600: oklch(54.6% 0.245 262.881);
+  --as-blue700: oklch(48.8% 0.243 264.376);
+  --as-pink100: oklch(94.8% 0.028 342.258);
+  --as-pink600: oklch(59.2% 0.249 0.584);
+  --as-gray50: oklch(98.5% 0.002 247.839);
+  --as-gray200: oklch(92.8% 0.006 264.531);
+  --as-gray500: oklch(55.1% 0.027 264.364);
+  --as-gray600: oklch(44.6% 0.03 256.802);
+  --as-gray700: oklch(37.3% 0.034 259.733);
+  --as-gray900: oklch(21% 0.034 264.665);
+  --as-white: #fff;
+  --as-transparent: #ffffff00;
+
+  --as-fsx: 1;
+  --as-fs: 0.5rem;
+
+  --as-size-x: 4;
+  --as-size-y: 1;
+}
+
+/* * size Classes ##############################################################################################################################################################################################################################################################################################################################################################################################################################*/
+
+.as-sy3 {
+  --as-size-y: 3;
+}
+.as-sy5 {
+  --as-size-y: 5;
+}
+.as-sy6 {
+  --as-size-y: 6;
+}
+
+.as-s1 {
+  display: inline-block;
+  width: calc(1px * var(--as-size-x) * var(--as-size-y));
+  height: calc(1px*var(--as-size-x)*var(--as-size-y));  aspect-ratio: 1 / 1;
+}
+.as-s2 {
+  display: inline-block;
+  width: calc(2px * var(--as-size-x) * var(--as-size-y));
+  height: calc(2px*var(--as-size-x)*var(--as-size-y));
+  
+}
+.as-s3 {
+  display: inline-block;
+  width: calc(3px * var(--as-size-x) * var(--as-size-y));
+  height: calc(3px*var(--as-size-x)*var(--as-size-y));
+  
+}
+.as-s4 {
+  display: inline-block;
+  width: calc(4px * var(--as-size-x) * var(--as-size-y));
+  height: calc(4px*var(--as-size-x)*var(--as-size-y));
+  
+}
+.as-s5 {
+  display: inline-block;
+  width: calc(5px * var(--as-size-x) * var(--as-size-y));
+  height: calc(5px*var(--as-size-x)*var(--as-size-y));
+  
+}
+.as-s6 {
+  display: inline-block;
+  width: calc(6px * var(--as-size-x) * var(--as-size-y));
+  height: calc(6px*var(--as-size-x)*var(--as-size-y));
+  
+}
+.as-s7 {
+  display: inline-block;
+  width: calc(7px * var(--as-size-x) * var(--as-size-y));
+  height: calc(7px*var(--as-size-x)*var(--as-size-y));
+  
+}
+.as-s8 {
+  display: inline-block;
+  width: calc(8px * var(--as-size-x) * var(--as-size-y));
+  height: calc(8px*var(--as-size-x)*var(--as-size-y));
+  
+}
+.as-s9 {
+  display: inline-block;
+  width: calc(9px * var(--as-size-x) * var(--as-size-y));
+  height: calc(9px*var(--as-size-x)*var(--as-size-y));
+  
+}
+
+/* * font size Classes ##############################################################################################################################################################################################################################################################################################################################################################################################################################*/
+
+.as-fsxa {
+  --as-fsx: 1;
+}
+.as-fsxb {
+  --as-fsx: 2;
+}
+.as-fsxc {
+  --as-fsx: 3;
+}
+.as-fsxd {
+  --as-fsx: 4;
+}
+.as-fsxe {
+  --as-fsx: 5;
+}
+
+.as-fixed-font1,
+.as-fixed-font1.as-fsxa,
+.as-fixed-font1.as-fsxb,
+.as-fixed-font1.as-fsxc,
+.as-fixed-font1.as-fsxd,
+.as-fixed-font1.as-fsxe,
+.as-ff1,
+.as-ff1.as-fsxa,
+.as-ff1.as-fsxb,
+.as-ff1.as-fsxc,
+.as-ff1.as-fsxd,
+.as-ff1.as-fsxe {
+  --as-fsx: 1;
+}
+.as-fixed-font2,
+.as-fixed-font2.as-fsxa,
+.as-fixed-font2.as-fsxb,
+.as-fixed-font2.as-fsxc,
+.as-fixed-font2.as-fsxd,
+.as-fixed-font2.as-fsxe,
+.as-ff2,
+.as-ff2.as-fsxa,
+.as-ff2.as-fsxb,
+.as-ff2.as-fsxc,
+.as-ff2.as-fsxd,
+.as-ff2.as-fsxe {
+  --as-fsx: 2;
+}
+.as-fixed-font3,
+.as-fixed-font3.as-fsxa,
+.as-fixed-font3.as-fsxb,
+.as-fixed-font3.as-fsxc,
+.as-fixed-font3.as-fsxd,
+.as-fixed-font3.as-fsxe,
+.as-ff3,
+.as-ff3.as-fsxa,
+.as-ff3.as-fsxb,
+.as-ff3.as-fsxc,
+.as-ff3.as-fsxd,
+.as-ff3.as-fsxe {
+  --as-fsx: 3;
+}
+.as-fixed-font4,
+.as-fixed-font4.as-fsxa,
+.as-fixed-font4.as-fsxb,
+.as-fixed-font4.as-fsxc,
+.as-fixed-font4.as-fsxd,
+.as-fixed-font4.as-fsxe,
+.as-ff4,
+.as-ff4.as-fsxa,
+.as-ff4.as-fsxb,
+.as-ff4.as-fsxc,
+.as-ff4.as-fsxd,
+.as-ff4.as-fsxe {
+  --as-fsx: 4;
+}
+.as-fixed-font5,
+.as-fixed-font5.as-fsxa,
+.as-fixed-font5.as-fsxb,
+.as-fixed-font5.as-fsxc,
+.as-fixed-font5.as-fsxd,
+.as-fixed-font5.as-fsxe,
+.as-ff5,
+.as-ff5.as-fsxa,
+.as-ff5.as-fsxb,
+.as-ff5.as-fsxc,
+.as-ff5.as-fsxd,
+.as-ff5.as-fsxe {
+  --as-fsx: 5;
+}
+
+.as-fsa1 {
+  font-size: calc(var(--as-fs) + (0 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fsa2 {
+  font-size: calc(var(--as-fs) + (1 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fsa4 {
+  font-size: calc(var(--as-fs) + (2 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fsa6 {
+  font-size: calc(var(--as-fs) + (3 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fsa8 {
+  font-size: calc(var(--as-fs) + (4 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fsb1 {
+  font-size: calc(var(--as-fs) + (5 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fsb2 {
+  font-size: calc(var(--as-fs) + (6 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fsb4 {
+  font-size: calc(var(--as-fs) + (7 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fsb6 {
+  font-size: calc(var(--as-fs) + (8 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fsb8 {
+  font-size: calc(var(--as-fs) + (9 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fsc1 {
+  font-size: calc(var(--as-fs) + (10 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fsc2 {
+  font-size: calc(var(--as-fs) + (11 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fsc4 {
+  font-size: calc(var(--as-fs) + (12 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fsc6 {
+  font-size: calc(var(--as-fs) + (13 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fsc8 {
+  font-size: calc(var(--as-fs) + (14 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fsd1 {
+  font-size: calc(var(--as-fs) + (15 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fsd2 {
+  font-size: calc(var(--as-fs) + (16 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fsd4 {
+  font-size: calc(var(--as-fs) + (17 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fsd6 {
+  font-size: calc(var(--as-fs) + (18 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fsd8 {
+  font-size: calc(var(--as-fs) + (19 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fse1 {
+  font-size: calc(var(--as-fs) + (20 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fse2 {
+  font-size: calc(var(--as-fs) + (21 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fse4 {
+  font-size: calc(var(--as-fs) + (22 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fse6 {
+  font-size: calc(var(--as-fs) + (23 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fse8 {
+  font-size: calc(var(--as-fs) + (24 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fsf1 {
+  font-size: calc(var(--as-fs) + (25 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fsf2 {
+  font-size: calc(var(--as-fs) + (26 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+.as-fsf4 {
+  font-size: calc(var(--as-fs) + (27 * 0.125rem) + (0.125rem * var(--as-fsx)));
+}
+
+/* * Colors Classes ##############################################################################################################################################################################################################################################################################################################################################################################################################################*/
+
+.as-transparent {
+  color: var(--as-transparent);
+}
+.as-red50 {
+  color: var(--as-red50);
+}
+.as-red100 {
+  color: var(--as-red100);
+}
+.as-red500 {
+  color: var(--as-red500);
+}
+.as-red600 {
+  color: var(--as-red600);
+}
+.as-red800 {
+  color: var(--as-red800);
+}
+.as-orange50 {
+  color: var(--as-orange50);
+}
+.as-orange100 {
+  color: var(--as-orange100);
+}
+.as-orange200 {
+  color: var(--as-orange200);
+}
+.as-orange300 {
+  color: var(--as-orange300);
+}
+.as-orange500 {
+  color: var(--as-orange500);
+}
+.as-orange600 {
+  color: var(--as-orange600);
+}
+.as-amber50 {
+  color: var(--as-amber50);
+}
+.as-amber400 {
+  color: var(--as-amber400);
+}
+.as-amber600 {
+  color: var(--as-amber600);
+}
+.as-yellow50 {
+  color: var(--as-yellow50);
+}
+.as-yellow100 {
+  color: var(--as-yellow100);
+}
+.as-yellow400 {
+  color: var(--as-yellow400);
+}
+.as-yellow600 {
+  color: var(--as-yellow600);
+}
+.as-green100 {
+  color: var(--as-green100);
+}
+.as-green600 {
+  color: var(--as-green600);
+}
+.as-green700 {
+  color: var(--as-green700);
+}
+.as-blue100 {
+  color: var(--as-blue100);
+}
+.as-blue500 {
+  color: var(--as-blue500);
+}
+.as-blue600 {
+  color: var(--as-blue600);
+}
+.as-blue700 {
+  color: var(--as-blue700);
+}
+.as-pink100 {
+  color: var(--as-pink100);
+}
+.as-pink600 {
+  color: var(--as-pink600);
+}
+.as-gray200 {
+  color: var(--as-gray200);
+}
+.as-gray500 {
+  color: var(--as-gray500);
+}
+.as-gray600 {
+  color: var(--as-gray600);
+}
+.as-gray700 {
+  color: var(--as-gray700);
+}
+.as-gray900 {
+  color: var(--as-gray900);
+}
+
+/* background color */
+
+.as-bgred50 {
+  background-color: var(--as-red50) !important;
+}
+.as-bgred100 {
+  background-color: var(--as-red100) !important;
+}
+.as-bgred500 {
+  background-color: var(--as-red500) !important;
+}
+.as-bgred600 {
+  background-color: var(--as-red600) !important;
+}
+.as-bgred800 {
+  background-color: var(--as-red800) !important;
+}
+.as-bgorange50 {
+  background-color: var(--as-orange50) !important;
+}
+.as-bgorange100 {
+  background-color: var(--as-orange100) !important;
+}
+.as-bgorange200 {
+  background-color: var(--as-orange200) !important;
+}
+.as-bgorange300 {
+  background-color: var(--as-orange300) !important;
+}
+.as-bgorange500 {
+  background-color: var(--as-orange500) !important;
+}
+.as-bgorange600 {
+  background-color: var(--as-orange600) !important;
+}
+.as-bgamber50 {
+  background-color: var(--as-amber50) !important;
+}
+.as-bgamber400 {
+  background-color: var(--as-amber400) !important;
+}
+.as-bgamber600 {
+  background-color: var(--as-amber600) !important;
+}
+.as-bgyellow50 {
+  background-color: var(--as-yellow50) !important;
+}
+.as-bgyellow100 {
+  background-color: var(--as-yellow100) !important;
+}
+.as-bgyellow400 {
+  background-color: var(--as-yellow400) !important;
+}
+.as-bgyellow600 {
+  background-color: var(--as-yellow600) !important;
+}
+.as-bggreen100 {
+  background-color: var(--as-green100) !important;
+}
+.as-bggreen600 {
+  background-color: var(--as-green600) !important;
+}
+.as-bggreen700 {
+  background-color: var(--as-green700) !important;
+}
+.as-bgblue100 {
+  background-color: var(--as-blue100) !important;
+}
+.as-bgblue500 {
+  background-color: var(--as-blue500) !important;
+}
+.as-bgblue600 {
+  background-color: var(--as-blue600) !important;
+}
+.as-bgblue700 {
+  background-color: var(--as-blue700) !important;
+}
+.as-bgpink100 {
+  background-color: var(--as-pink100) !important;
+}
+.as-bgpink600 {
+  background-color: var(--as-pink600) !important;
+}
+.as-bggray200 {
+  background-color: var(--as-gray200) !important;
+}
+.as-bggray500 {
+  background-color: var(--as-gray500) !important;
+}
+.as-bggray600 {
+  background-color: var(--as-gray600) !important;
+}
+.as-bggray700 {
+  background-color: var(--as-gray700) !important;
+}
+.as-bggray900 {
+  background-color: var(--as-gray900) !important;
+}
+
+/* border color */
+
+.as-border-red50 {
+  border-color: var(--as-red50) !important;
+}
+.as-border-red100 {
+  border-color: var(--as-red100) !important;
+}
+.as-border-red500 {
+  border-color: var(--as-red500) !important;
+}
+.as-border-red600 {
+  border-color: var(--as-red600) !important;
+}
+.as-border-red800 {
+  border-color: var(--as-red800) !important;
+}
+.as-border-orange50 {
+  border-color: var(--as-orange50) !important;
+}
+.as-border-orange100 {
+  border-color: var(--as-orange100) !important;
+}
+.as-border-orange200 {
+  border-color: var(--as-orange200) !important;
+}
+.as-border-orange300 {
+  border-color: var(--as-orange300) !important;
+}
+.as-border-orange500 {
+  border-color: var(--as-orange500) !important;
+}
+.as-border-orange600 {
+  border-color: var(--as-orange600) !important;
+}
+.as-border-amber50 {
+  border-color: var(--as-amber50) !important;
+}
+.as-border-amber400 {
+  border-color: var(--as-amber400) !important;
+}
+.as-border-amber600 {
+  border-color: var(--as-amber600) !important;
+}
+.as-border-yellow50 {
+  border-color: var(--as-yellow50) !important;
+}
+.as-border-yellow100 {
+  border-color: var(--as-yellow100) !important;
+}
+.as-border-yellow400 {
+  border-color: var(--as-yellow400) !important;
+}
+.as-border-yellow600 {
+  border-color: var(--as-yellow600) !important;
+}
+.as-border-green100 {
+  border-color: var(--as-green100) !important;
+}
+.as-border-green600 {
+  border-color: var(--as-green600) !important;
+}
+.as-border-green700 {
+  border-color: var(--as-green700) !important;
+}
+.as-border-blue100 {
+  border-color: var(--as-blue100) !important;
+}
+.as-border-blue500 {
+  border-color: var(--as-blue500) !important;
+}
+.as-border-blue600 {
+  border-color: var(--as-blue600) !important;
+}
+.as-border-blue700 {
+  border-color: var(--as-blue700) !important;
+}
+.as-border-pink100 {
+  border-color: var(--as-pink100) !important;
+}
+.as-border-pink600 {
+  border-color: var(--as-pink600) !important;
+}
+.as-border-gray200 {
+  border-color: var(--as-gray200) !important;
+}
+.as-border-gray500 {
+  border-color: var(--as-gray500) !important;
+}
+.as-border-gray600 {
+  border-color: var(--as-gray600) !important;
+}
+.as-border-gray700 {
+  border-color: var(--as-gray700) !important;
+}
+.as-border-gray900 {
+  border-color: var(--as-gray900) !important;
+}
+
+/* * Normalize ##############################################################################################################################################################################################################################################################################################################################################################################################################################*/
+body {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* ! Section ##############################################################################################################################################################################################################################################################################################################################################################################################################################*/
+
+/* * Start Nav section * */
+.logo-icon .bg-icon {
+  background-image: linear-gradient(
+    to right,
+    var(--as-orange500) 20%,
+    var(--as-red500)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.logo-icon {
+  width: 48px;
+}
+
+.accent-btn-hover:hover {
+  color: var(--as-orange500);
+}
+
+.avatar-img {
+  max-width: 32px;
+}
+.navbar-link-hover:hover {
+  color: var(--as-orange600);
+}
+
+/* * End Nav section * */
+/* * Start Main section * */
+
+/* ? Start left Main section * */
+
+.recipe-img > .img {
+  object-position: center;
+}
+
+/* ? End left Main section * */
+/* ? Start Right Main section * */
+
+.service-icon {
+  width: 48px;
+}
+ .service-icon:hover .hover-icon3 {
+  color: var(--as-orange200) !important;
+}
+
+.as-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: oklab(75.1% 0.12261 0.08669 / 0.302) transparent;
+}
+
+#details_tabs .nav-item .nav-link.active {
+  position: relative;
+  color: var(--as-orange600);
+}
+#details_tabs .nav-item .nav-link:hover {
+  color: var(--as-gray700);
+}
+
+#details_tabs .nav-item .nav-link::before {
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: var(--as-orange600);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#details_tabs .nav-item .nav-link.active::before {
+  width: 100%;
+}
+
+.tab-content #ingredients {
+  background-image: linear-gradient(var(--as-amber50), var(--as-orange50));
+}
+
+
+.refresh-btn{
+  background-image: linear-gradient(to right, var(--as-orange500),var(--as-red500) );
+}
+.refresh-btn:hover{
+  background-image: linear-gradient(to right, var(--as-orange600),var(--as-red600) );
+  transform: scale(1.1);
+}
+
+/* ? End Right Main section * */
+
+/* * End Main section * */
+
+/* * animation ##############################################################################################################################################################################################################################################################################################################################################################################################################################*/
+
+/* * Media ##############################################################################################################################################################################################################################################################################################################################################################################################################################*/
+
+@media screen and (min-width: 768px) {
+  :root {
+    --as-fsx: 2;
+  }
+  .as-fsxa-md {
+    --as-fsx: 3;
+  }
+  .as-fsxb-md {
+    --as-fsx: 4;
+  }
+  .as-fsxc-md {
+    --as-fsx: 5;
+  }
+  .as-fsxd-md {
+    --as-fsx: 6;
+  }
+  .as-fsxe-md {
+    --as-fsx: 7;
+  }
+
+  .as-fixed-font1-md,
+  .as-fixed-font1-md.as-fsxa-md,
+  .as-fixed-font1-md.as-fsxb-md,
+  .as-fixed-font1-md.as-fsxc-md,
+  .as-fixed-font1-md.as-fsxd-md,
+  .as-fixed-font1-md.as-fsxe-md,
+  .as-ff2-md,
+  .as-ff1-md.as-fsxa-md,
+  .as-ff1-md.as-fsxb-md,
+  .as-ff1-md.as-fsxc-md,
+  .as-ff1-md.as-fsxd-md,
+  .as-ff1-md.as-fsxe-md {
+    --as-fsx: 1;
+  }
+  .as-fixed-font2-md,
+  .as-fixed-font2-md.as-fsxa-md,
+  .as-fixed-font2-md.as-fsxb-md,
+  .as-fixed-font2-md.as-fsxc-md,
+  .as-fixed-font2-md.as-fsxd-md,
+  .as-fixed-font2-md.as-fsxe-md,
+  .as-ff2-md,
+  .as-ff2-md.as-fsxa-md,
+  .as-ff2-md.as-fsxb-md,
+  .as-ff2-md.as-fsxc-md,
+  .as-ff2-md.as-fsxd-md,
+  .as-ff2-md.as-fsxe-md {
+    --as-fsx: 2;
+  }
+  .as-fixed-font3-md,
+  .as-fixed-font3-md.as-fsxa-md,
+  .as-fixed-font3-md.as-fsxb-md,
+  .as-fixed-font3-md.as-fsxc-md,
+  .as-fixed-font3-md.as-fsxd-md,
+  .as-fixed-font3-md.as-fsxe-md,
+  .as-ff3-md,
+  .as-ff3-md.as-fsxa-md,
+  .as-ff3-md.as-fsxb-md,
+  .as-ff3-md.as-fsxc-md,
+  .as-ff3-md.as-fsxd-md,
+  .as-ff3-md.as-fsxe-md {
+    --as-fsx: 3;
+  }
+  .as-fixed-font4-md,
+  .as-fixed-font4-md.as-fsxa-md,
+  .as-fixed-font4-md.as-fsxb-md,
+  .as-fixed-font4-md.as-fsxc-md,
+  .as-fixed-font4-md.as-fsxd-md,
+  .as-fixed-font4-md.as-fsxe-md,
+  .as-ff4-md,
+  .as-ff4-md.as-fsxa-md,
+  .as-ff4-md.as-fsxb-md,
+  .as-ff4-md.as-fsxc-md,
+  .as-ff4-md.as-fsxd-md,
+  .as-ff4-md.as-fsxe-md {
+    --as-fsx: 4;
+  }
+  .as-fixed-font5-md,
+  .as-fixed-font5-md.as-fsxa-md,
+  .as-fixed-font5-md.as-fsxb-md,
+  .as-fixed-font5-md.as-fsxc-md,
+  .as-fixed-font5-md.as-fsxd-md,
+  .as-fixed-font5-md.as-fsxe-md,
+  .as-ff5-md,
+  .as-ff5-md.as-fsxa-md,
+  .as-ff5-md.as-fsxb-md,
+  .as-ff5-md.as-fsxc-md,
+  .as-ff5-md.as-fsxd-md,
+  .as-ff5-md.as-fsxe-md {
+    --as-fsx: 5;
+  }
+
+  /*  */
+  .avatar-img {
+    max-width: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    --as-fsx: 3;
+  }
+  .as-fsxa-xl {
+    --as-fsx: 6;
+  }
+  .as-fsxb-xl {
+    --as-fsx: 7;
+  }
+  .as-fsxc-xl {
+    --as-fsx: 8;
+  }
+  .as-fsxd-xl {
+    --as-fsx: 9;
+  }
+  .as-fsxe-xl {
+    --as-fsx: 10;
+  }
+
+  .as-fixed-font1-xl,
+  .as-fixed-font1-xl.as-fsxa-xl,
+  .as-fixed-font1-xl.as-fsxb-xl,
+  .as-fixed-font1-xl.as-fsxc-xl,
+  .as-fixed-font1-xl.as-fsxd-xl,
+  .as-fixed-font1-xl.as-fsxe-xl,
+  .as-ff1-xl,
+  .as-ff1-xl.as-fsxa-xl,
+  .as-ff1-xl.as-fsxb-xl,
+  .as-ff1-xl.as-fsxc-xl,
+  .as-ff1-xl.as-fsxd-xl,
+  .as-ff1-xl.as-fsxe-xl {
+    --as-fsx: 1;
+  }
+  .as-fixed-font2-xl,
+  .as-fixed-font2-xl.as-fsxa-xl,
+  .as-fixed-font2-xl.as-fsxb-xl,
+  .as-fixed-font2-xl.as-fsxc-xl,
+  .as-fixed-font2-xl.as-fsxd-xl,
+  .as-fixed-font2-xl.as-fsxe-xl,
+  .as-ff2-xl,
+  .as-ff2-xl.as-fsxa-xl,
+  .as-ff2-xl.as-fsxb-xl,
+  .as-ff2-xl.as-fsxc-xl,
+  .as-ff2-xl.as-fsxd-xl,
+  .as-ff2-xl.as-fsxe-xl {
+    --as-fsx: 2;
+  }
+  .as-fixed-font3-xl,
+  .as-fixed-font3-xl.as-fsxa-xl,
+  .as-fixed-font3-xl.as-fsxb-xl,
+  .as-fixed-font3-xl.as-fsxc-xl,
+  .as-fixed-font3-xl.as-fsxd-xl,
+  .as-fixed-font3-xl.as-fsxe-xl,
+  .as-ff3-xl,
+  .as-ff3-xl.as-fsxa-xl,
+  .as-ff3-xl.as-fsxb-xl,
+  .as-ff3-xl.as-fsxc-xl,
+  .as-ff3-xl.as-fsxd-xl,
+  .as-ff3-xl.as-fsxe-xl {
+    --as-fsx: 3;
+  }
+  .as-fixed-font4-xl,
+  .as-fixed-font4-xl.as-fsxa-xl,
+  .as-fixed-font4-xl.as-fsxb-xl,
+  .as-fixed-font4-xl.as-fsxc-xl,
+  .as-fixed-font4-xl.as-fsxd-xl,
+  .as-fixed-font4-xl.as-fsxe-xl,
+  .as-ff4-xl,
+  .as-ff4-xl.as-fsxa-xl,
+  .as-ff4-xl.as-fsxb-xl,
+  .as-ff4-xl.as-fsxc-xl,
+  .as-ff4-xl.as-fsxd-xl,
+  .as-ff4-xl.as-fsxe-xl {
+    --as-fsx: 4;
+  }
+  .as-fixed-font5-xl,
+  .as-fixed-font5-xl.as-fsxa-xl,
+  .as-fixed-font5-xl.as-fsxb-xl,
+  .as-fixed-font5-xl.as-fsxc-xl,
+  .as-fixed-font5-xl.as-fsxd-xl,
+  .as-fixed-font5-xl.as-fsxe-xl,
+  .as-ff5-xl,
+  .as-ff5-xl.as-fsxa-xl,
+  .as-ff5-xl.as-fsxb-xl,
+  .as-ff5-xl.as-fsxc-xl,
+  .as-ff5-xl.as-fsxd-xl,
+  .as-ff5-xl.as-fsxe-xl {
+    --as-fsx: 5;
+  }
+
+.recipe-section{
+  max-height: 780px;
+
+}
+.recipe-left{
+  max-height: 780px;
+
+}
+.recipe-right{
+  max-height: 780px;
+}
+  #tabs-container {
+  min-height: 360px;
+}
+#tabs-container .tab-pane {
+  max-height: 360px;
+  overflow-y: auto;
+}
+}
+
+/* 
+?
+.as-red50
+.as-red100
+.as-red500
+.as-red600
+.as-red800
+.as-orange50
+.as-orange100
+.as-orange200
+.as-orange300
+.as-orange500
+.as-orange600
+.as-amber50
+.as-amber400
+.as-amber600
+.as-yellow50
+.as-yellow100
+.as-yellow400
+.as-yellow600
+.as-green100
+.as-green600
+.as-green700
+.as-blue100
+.as-blue500
+.as-blue600
+.as-blue700
+.as-pink100
+.as-pink600
+.as-gray50
+.as-gray200
+.as-gray500
+.as-gray600
+.as-gray700
+.as-gray900
+.as-white
+
+
+.as-red50{}
+.as-red100{}
+.as-red500{}
+.as-red600{}
+.as-red800{}
+.as-orange50{}
+.as-orange100{}
+.as-orange200{}
+.as-orange300{}
+.as-orange500{}
+.as-orange600{}
+.as-amber400{}
+.as-amber600{}
+.as-yellow50{}
+.as-yellow100{}
+.as-yellow400{}
+.as-yellow600{}
+.as-green600{}
+.as-green700{}
+.as-blue500{}
+.as-blue600{}
+.as-blue700{}
+.as-pink100{}
+.as-pink600{}
+.as-gray200{}
+.as-gray500{}
+.as-gray600{}
+.as-gray700{}
+.as-gray900{}
+
+
+.as-red50{
+  color:var();
+}
+.as-red100{
+  color:var();
+}
+.as-red500{
+  color:var();
+}
+.as-red600{
+  color:var();
+}
+.as-red800{
+  color:var();
+}
+.as-orange50{
+  color:var();
+}
+.as-orange100{
+  color:var();
+}
+.as-orange200{
+  color:var();
+}
+.as-orange300{
+  color:var();
+}
+.as-orange500{
+  color:var();
+}
+.as-orange600{
+  color:var();
+}
+.as-amber400{
+  color:var();
+}
+.as-amber600{
+  color:var();
+}
+.as-yellow50{
+  color:var();
+}
+.as-yellow100{
+  color:var();
+}
+.as-yellow400{
+  color:var();
+}
+.as-yellow600{
+  color:var();
+}
+.as-green600{
+  color:var();
+}
+.as-green700{
+  color:var();
+}
+.as-blue500{
+  color:var();
+}
+.as-blue600{
+  color:var();
+}
+.as-blue700{
+  color:var();
+}
+.as-pink100{
+  color:var();
+}
+.as-pink600{
+  color:var();
+}
+.as-gray200{
+  color:var();
+}
+.as-gray500{
+  color:var();
+}
+.as-gray600{
+  color:var();
+}
+.as-gray700{
+  color:var();
+}
+.as-gray900{
+  color:var();
+}
+
+*/

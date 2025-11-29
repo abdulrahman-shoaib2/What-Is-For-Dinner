@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What's For Dinner</title>
+
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- !CSS -->
+     <!-- * Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- * CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="as-bgyellow50">
+    <nav
+      class="navbar navbar-expand-md fixed-top bg-white   py-0 border-bottom border-1 as-border-orange100 shadow-sm"
+    >
+      <div class="container-lg py-0 px-4 px-lg-2">
+        <a
+          class="logo navbar-brand d-flex align-items-center column-gap-2 py-3"
+          href="#"
+        >
+          <span
+            class="logo-icon icon-shadow rounded-circle shadow fa-stack as-fsb4 as-ff1 rounded-circle"
+          >
+            <i
+              class="fa-solid fa-circle fa-stack-2x bg-icon as-transparent"
+            ></i>
+            <i
+              class="fa-solid fa-utensils fa-stack-1x as-fsa8 as-ff1 fa-inverse"
+            ></i>
+          </span>
+          <div class="">
+            <h2 class="as-fsa8 as-ff4-xl fw-bold">What's For Dinner</h2>
+            <p class="as-fsa2 as-ff2-xl as-fsxc-xl text-secondary">
+              Your daily meal inspiration
+            </p>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler ms-auto accent-btn-hover border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars as-fsb4 as-ff1"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <hr class="w-100 d-md-none as-orange100 m-0 opacity-100" />
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-column gap-2 flex-md-row align-items-md-center py-2"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link as-gray600 navbar-link-hover d-flex align-items-center column-gap-2"
+                aria-current="page"
+                href="#"
+                ><i class="fa-solid fa-bookmark as-fsb1 as-ff1"></i>
+                <span class="d-md-none">Saved Recipes</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link as-gray600 navbar-link-hover d-flex align-items-center column-gap-2"
+                href="#"
+                ><i class="fa-solid fa-clock-rotate-left as-fsb1 as-ff1"></i>
+                <span class="d-md-none">Recent</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link as-gray600 navbar-link-hover d-flex align-items-center column-gap-2"
+                href="#"
+                ><i class="fa-solid fa-gear as-fsb1 as-ff1"></i>
+                <span class="d-md-none">Settings</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link as-gray600 navbar-link-hover d-flex align-items-center column-gap-2"
+                href="#"
+              >
+                <div
+                  class="rounded-circle d-inline-block avatar-img overflow-hidden border border-2 as-border-orange300"
+                >
+                  <img
+                    src="./images/avatar-4.jpg"
+                    alt="avatar"
+                    class="w-100 d-inline-block object-fit-cover"
+                  />
+                </div>
+                <span class="d-md-none">Profile</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- <header class="min-vh-100 as-bgred100 py-5"></header> -->
+    <main class="min-vh-100 as-bgyellow50 mt-5 as-bgorange100 px-3 py-5" id="main">
+      <div class="container p-4 p-md-2 p-xl-5 ">
+        <div
+          class="recipe-section  row flex-wrap flex-md-row rounded-4 overflow-hidden shadow border-bottom border-1 as-border-orange100 "
+        >
+          <div class="recipe-left col-12 col-lg-4 col-xl-5 p-0 overflow-hidden position-relative">
+            <div
+              class="recipe-img w-100 h-100 overflow-hidden ratio ratio-1x1 bg-primary"
+            >
+              <img
+                id="recipe-img"
+                src="/images/bbq-pulled-pork.png"
+                alt=""
+                class="w-100  h-100 object-fit-cover"
+              />
+            </div>
+            <div
+              class="position-absolute top-0 bottom-0 start-0 end-0 p-4 d-flex flex-column justify-content-between"
+            >
+              <div
+                class="rating-badge badge bg-white shadow px-3 py-2 rounded-pill align-self-start d-flex align-items-center gap-2"
+              >
+                <i
+                  class="fa-solid fa-star as-yellow400 as-fsa4 as-ff1-md as-ff2-xl"
+                ></i>
+                <span id="rating-avg" class="text-black as-fsa4 as-ff1-md as-ff2-xl py-1"
+                  >4.7</span
+                >
+                <span
+                  id="reviews"
+                  class="text-secondary fw-normal as-fsa2 as-ff1-md as-ff2-xl"
+                  >(267 reviews)</span
+                >
+              </div>
+              <div
+                class="recipe-info bg-white d-flex justify-content-between py-3 px-5 px-lg-4 rounded-4 shadow"
+              >
+                <div class="prep-time d-flex flex-column align-items-center">
+                  <i
+                    class="fa-solid fa-clock as-fsa8 as-ff4-xl as-orange500"
+                  ></i>
+                  <span class="text-secondary as-fsa2 as-ff1-md as-ff2-xl"
+                    >Prep Time</span
+                  >
+                  <span id="prep-time" class="text-black fw-bold as-fsa4 as-ff1-md as-ff2-xl"
+                    >15 min</span
+                  >
+                </div>
+                <div class="cook-time d-flex flex-column align-items-center">
+                  <i
+                    class="fa-solid fa-fire-burner as-fsa8 as-ff4-xl as-red500"
+                  ></i>
+                  <span class="text-secondary as-fsa2 as-ff1-md as-ff2-xl"
+                    >Cook Time</span
+                  >
+                  <span id="cook-time" class="text-black fw-bold as-fsa4 as-ff1-md as-ff2-xl"
+                    >60 min</span
+                  >
+                </div>
+                <div class="servings d-flex flex-column align-items-center">
+                  <i class="fa-solid fa-users as-fsa8 as-ff4-xl as-blue500"></i>
+                  <span class="text-secondary as-fsa2 as-ff1-md as-ff2-xl"
+                    >Servings</span
+                  >
+                  <span id="people" class="text-black fw-bold as-fsa4 as-ff1-md as-ff2-xl"
+                    >4 people</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-right as-scrollbar overflow-y-scroll  p-4  p-md-5 col-12 col-lg-8  col-xl-7 d-flex flex-column bg-white row-gap-4">
+            <div class="d-flex flex-column  flex-md-row-reverse">
+              <div class="d-flex justify-content-end align-items-lg-center">
+                <span class="service-icon  fa-stack as-fsb4 as-ff1">
+                  <i class="fa-solid fa-square hover-icon3 fa-stack-2x as-orange100"></i>
+                  <i
+                    class="fa-solid fa-bookmark as-orange600 fa-stack-1x as-fsa6 as-ff1 fa-inverse"
+                  ></i>
+                </span>
+                <span class="service-icon  fa-stack as-fsb4 as-ff1">
+                  <i class="fa-solid fa-square hover-icon3 fa-stack-2x as-orange100"></i>
+                  <i
+                    class="fa-solid fa-share-alt as-orange600 fa-stack-1x as-fsa6 as-ff1 fa-inverse"
+                  ></i>
+                </span>
+              </div>
+              <div class="flex-grow-1 d-flex flex-column gap-2">
+                <div class="d-flex gap-2">
+                  <div
+                    id="level-badge" class="badge as-bggreen100 as-green700 bg-opacity-25 rounded-pill lh-base px-3 as-fsa2 as-ff1 fw-medium user-select-none"
+                  >
+                    Intermediate
+                  </div>
+                  <div
+                    id="category-badge" class="badge as-bgblue100 as-blue700 bg-opacity-25 rounded-pill lh-base px-3 as-fsa2 as-ff1 fw-medium user-select-none"
+                  >
+                    Mediterranean
+                  </div>
+                </div>
+                <h2 id="recipe-title" class="text-black fw-bold as-fsb4 as-fsxa-md as-fsxa-xl">
+                  French Onion Soup
+                </h2>
+                <p id="recipe-desc" class="lead as-fsa4 fw-normal as-gray600">
+                  Rich beef broth with caramelized onions and melted cheese
+                </p>
+              </div>
+            </div>
+            <div
+              id="time-warning" class="as-bgred50 border-start as-border-red500 border-4 rounded-3 p-3 px-4 d-flex align-items-center justify-content-start gap-3 "
+            >
+              <i class="fa-solid fa-warning as-red500 as-fsb1 as-ff1"></i>
+              <div class="">
+                <h3 class="as-red800 as-fsa4 as-ff2-xl">
+                  Extended Preparation Time
+                </h3>
+                <p class="as-red500 as-fsa2">
+                  This recipe requires more than 45 minutes to prepare. Plan
+                  accordingly!
+                </p>
+              </div>
+            </div>
+            <ul
+              class="col-12 nav flex-nowrap border-bottom border-1 p-0 py-3"
+              id="details_tabs"
+            >
+              <li class="col-3 nav-item flex-grow-1 text-center">
+                <a
+                  class="nav-link text-nowrap as-gray500 d-flex align-items-center justify-content-center column-gap-2"
+                  href="#ingredients"
+                  data-bs-toggle="tab"
+                  data-bs-target="#ingredients"
+                  ><i class="fa-solid fa-list-check"></i>Ingredients</a
+                >
+              </li>
+              <li class="col-3 nav-item flex-grow-1 text-center">
+                <a
+                  class="nav-link text-nowrap as-gray500 d-flex align-items-center justify-content-center column-gap-2"
+                  href="#instructions"
+                  data-bs-toggle="tab"
+                  data-bs-target="#instructions"
+                  ><i class="bi bi-book-fill"></i>Instructions</a
+                >
+              </li>
+              <li class="col-3 nav-item flex-grow-1 text-center">
+                <a
+                  class="nav-link text-nowrap as-gray500 d-flex align-items-center justify-content-center column-gap-2"
+                  href="#nutrition"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nutrition"
+                  ><i class="fa-solid fa-pie-chart"></i>Nutrition</a
+                >
+              </li>
+              <li class="col-3 nav-item flex-grow-1 text-center">
+                <a
+                  class="nav-link text-nowrap active as-gray500 d-flex align-items-center justify-content-center column-gap-2"
+                  href="#chef_tips"
+                  data-bs-toggle="tab"
+                  data-bs-target="#chef_tips"
+                  ><i class="fa-solid fa-lightbulb"></i>Chef's Tips</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content  overflow-hidden" id="tabs-container">
+              <div class="tab-pane h-100 fade as-fsa6 as-ff1  rounded-4 overflow-y-auto "
+                id="ingredients"
+                role="tabpanel"
+              >
+                <div id="ingredients-content" class="d-flex flex-column justify-content-around row-gap-3 p-4  ">
+                  <div class="d-flex column-gap-2 ">
+                    <span
+                      class="numbering rounded-circle fa-stack as-fsa2 as-ff1 rounded-circle user-select-none"
+                    >
+                      <i
+                        class="fa-solid fa-circle fa-stack-2x as-orange500"
+                      ></i>
+                      <span
+                        class="fa-stack-1x as-fsa2 as-ff1 fa-inverse fw-bold"
+                        >1</span
+                      >
+                    </span>
+                    <span class="as-fsa6 as-ff1">4 large onions, thinly sliced</span>
+                  </div>
+                  <div class="d-flex column-gap-2 ">
+                    <span
+                      class="numbering rounded-circle fa-stack as-fsa2 as-ff1 rounded-circle user-select-none"
+                    >
+                      <i
+                        class="fa-solid fa-circle fa-stack-2x as-orange500"
+                      ></i>
+                      <span
+                        class="fa-stack-1x as-fsa2 as-ff1 fa-inverse fw-bold"
+                        >1</span
+                      >
+                    </span>
+                    <span class="as-fsa6 as-ff1">4 large onions, thinly sliced</span>
+                  </div>
+                  <div class="d-flex column-gap-2 ">
+                    <span
+                      class="numbering rounded-circle fa-stack as-fsa2 as-ff1 rounded-circle user-select-none"
+                    >
+                      <i
+                        class="fa-solid fa-circle fa-stack-2x as-orange500"
+                      ></i>
+                      <span
+                        class="fa-stack-1x as-fsa2 as-ff1 fa-inverse fw-bold"
+                        >1</span
+                      >
+                    </span>
+                    <span class="as-fsa6 as-ff1">4 large onions, thinly sliced</span>
+                  </div>
+                  <div class="d-flex column-gap-2 ">
+                    <span
+                      class="numbering rounded-circle fa-stack as-fsa2 as-ff1 rounded-circle user-select-none"
+                    >
+                      <i
+                        class="fa-solid fa-circle fa-stack-2x as-orange500"
+                      ></i>
+                      <span
+                        class="fa-stack-1x as-fsa2 as-ff1 fa-inverse fw-bold"
+                        >1</span
+                      >
+                    </span>
+                    <span class="as-fsa6 as-ff1">4 large onions, thinly sliced</span>
+                  </div>
+                  <div class="d-flex column-gap-2 ">
+                    <span
+                      class="numbering rounded-circle fa-stack as-fsa2 as-ff1 rounded-circle user-select-none"
+                    >
+                      <i
+                        class="fa-solid fa-circle fa-stack-2x as-orange500"
+                      ></i>
+                      <span
+                        class="fa-stack-1x as-fsa2 as-ff1 fa-inverse fw-bold"
+                        >1</span
+                      >
+                    </span>
+                    <span class="as-fsa6 as-ff1">4 large onions, thinly sliced</span>
+                  </div>
+                  <div class="d-flex column-gap-2 ">
+                    <span
+                      class="numbering rounded-circle fa-stack as-fsa2 as-ff1 rounded-circle user-select-none"
+                    >
+                      <i
+                        class="fa-solid fa-circle fa-stack-2x as-orange500"
+                      ></i>
+                      <span
+                        class="fa-stack-1x as-fsa2 as-ff1 fa-inverse fw-bold"
+                        >1</span
+                      >
+                    </span>
+                    <span class="as-fsa6 as-ff1">4 large onions, thinly sliced</span>
+                  </div>
+                  <div class="d-flex column-gap-2 ">
+                    <span
+                      class="numbering rounded-circle fa-stack as-fsa2 as-ff1 rounded-circle user-select-none"
+                    >
+                      <i
+                        class="fa-solid fa-circle fa-stack-2x as-orange500"
+                      ></i>
+                      <span
+                        class="fa-stack-1x as-fsa2 as-ff1 fa-inverse fw-bold"
+                        >1</span
+                      >
+                    </span>
+                    <span class="as-fsa6 as-ff1">4 large onions, thinly sliced</span>
+                  </div>
+                  <div class="d-flex column-gap-2 ">
+                    <span
+                      class="numbering rounded-circle fa-stack as-fsa2 as-ff1 rounded-circle user-select-none"
+                    >
+                      <i
+                        class="fa-solid fa-circle fa-stack-2x as-orange500"
+                      ></i>
+                      <span
+                        class="fa-stack-1x as-fsa2 as-ff1 fa-inverse fw-bold"
+                        >1</span
+                      >
+                    </span>
+                    <span class="as-fsa6 as-ff1">4 large onions, thinly sliced</span>
+                  </div>
+                  <div class="d-flex column-gap-2 ">
+                    <span
+                      class="numbering rounded-circle fa-stack as-fsa2 as-ff1 rounded-circle user-select-none"
+                    >
+                      <i
+                        class="fa-solid fa-circle fa-stack-2x as-orange500"
+                      ></i>
+                      <span
+                        class="fa-stack-1x as-fsa2 as-ff1 fa-inverse fw-bold"
+                        >1</span
+                      >
+                    </span>
+                    <span class="as-fsa6 as-ff1">4 large onions, thinly sliced</span>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane h-100  fade" id="instructions" role="tabpanel">
+                <div id="instructions-content" class="d-flex flex-column  row-gap-4">
+                  <div class="d-flex align-items-center column-gap-2">
+                    <span
+                      class="as-s2 as-sy6 as-fsb2 as-ff1 as-bgorange500 fw-bold text-white rounded-4 user-select-none d-flex justify-content-center align-items-center flex-shrink-0 flex-grow-0"
+                      >1</span
+                    >
+                    <span class=" as-fsa6 as-ff1"
+                      >Melt butter in a large pot. Add onions and cook slowly
+                      for 40 minutes, stirring occasionally until
+                      caramelized.</span
+                    >
+                  </div>
+                  <div class="d-flex align-items-center column-gap-2">
+                    <span
+                      class="as-s2 as-sy6 as-fsb2 as-ff1 as-bgorange500 fw-bold text-white rounded-4 user-select-none d-flex justify-content-center align-items-center flex-shrink-0 flex-grow-0"
+                      >1</span
+                    >
+                    <span class=" as-fsa6 as-ff1"
+                      >Melt butter in a large pot. Add onions and cook slowly
+                      for 40 minutes, stirring occasionally until
+                      caramelized.</span
+                    >
+                  </div>
+                  <div class="d-flex align-items-center column-gap-2">
+                    <span
+                      class="as-s2 as-sy6 as-fsb2 as-ff1 as-bgorange500 fw-bold text-white rounded-4 user-select-none d-flex justify-content-center align-items-center flex-shrink-0 flex-grow-0"
+                      >1</span
+                    >
+                    <span class=" as-fsa6 as-ff1"
+                      >Melt butter in a large pot. Add onions and cook slowly
+                      for 40 minutes, stirring occasionally until
+                      caramelized.</span
+                    >
+                  </div>
+                  <div class="d-flex align-items-center column-gap-2">
+                    <span
+                      class="as-s2 as-sy6 as-fsb2 as-ff1 as-bgorange500 fw-bold text-white rounded-4 user-select-none d-flex justify-content-center align-items-center flex-shrink-0 flex-grow-0"
+                      >1</span
+                    >
+                    <span class=" as-fsa6 as-ff1"
+                      >Melt butter in a large pot. Add onions and cook slowly
+                      for 40 minutes, stirring occasionally until
+                      caramelized.</span
+                    >
+                  </div>
+                  <div class="d-flex align-items-center column-gap-2">
+                    <span
+                      class="as-s2 as-sy6 as-fsb2 as-ff1 as-bgorange500 fw-bold text-white rounded-4 user-select-none d-flex justify-content-center align-items-center flex-shrink-0 flex-grow-0"
+                      >1</span
+                    >
+                    <span class=" as-fsa6 as-ff1"
+                      >Melt butter in a large pot. Add onions and cook slowly
+                      for 40 minutes, stirring occasionally until
+                      caramelized.</span
+                    >
+                  </div>
+                  <div class="d-flex align-items-center column-gap-2">
+                    <span
+                      class="as-s2 as-sy6 as-fsb2 as-ff1 as-bgorange500 fw-bold text-white rounded-4 user-select-none d-flex justify-content-center align-items-center flex-shrink-0 flex-grow-0"
+                      >1</span
+                    >
+                    <span class=" as-fsa6 as-ff1"
+                      >Melt butter in a large pot. Add onions and cook slowly
+                      for 40 minutes, stirring occasionally until
+                      caramelized.</span
+                    >
+                  </div>
+
+
+
+                </div>
+              </div>
+              <div class="tab-pane h-100  fade overflow-hidden" id="nutrition" role="tabpanel">
+                <div class="row g-3">
+                  <div class="nutrition-item col-12 col-md-6">
+                    <div
+                      class="inner d-flex align-items-center bg-body-tertiary p-3 rounded-3 justify-content-between"
+                    >
+                      <div
+                        class="d-flex justify-content-start align-items-center column-gap-3"
+                      >
+                        <span class="fa-stack as-s2 as-sy6 as-fsb6 as-ff1">
+                          <i
+                            class="fa-solid fa-square fa-stack-2x as-orange100"
+                          ></i>
+                          <i
+                            class="fa-solid fa-fire as-orange600 fa-stack-1x as-fsa6 as-ff1 fa-inverse"
+                          ></i>
+                        </span>
+                        <span class="fw-semibold self as-fsa2">Calories</span>
+                      </div>
+                      <span id="calories-value" class="d-inline-block text-nowrap fw-bold as-fsa6 ">580 kcal</span>
+                    </div>
+                  </div>
+                  <div class="nutrition-item col-12 col-md-6">
+                    <div
+                      class="inner d-flex align-items-center bg-body-tertiary p-3 rounded-3 justify-content-between"
+                    >
+                      <div
+                        class="d-flex justify-content-start align-items-center column-gap-3"
+                      >
+                        <span class="fa-stack as-s2 as-sy6 as-fsb6 as-ff1">
+                          <i
+                            class="fa-solid fa-square fa-stack-2x as-blue100"
+                          ></i>
+                          <i
+                            class="fa-solid fa-dumbbell as-blue600 fa-stack-1x as-fsa6 as-ff1 fa-inverse"
+                          ></i>
+                        </span>
+                        <span class="fw-semibold self as-fsa2">Protein</span>
+                      </div>
+                      <span id="protein-value" class="d-inline-block fw-bold as-fsa6 ">36g</span>
+                    </div>
+                  </div>
+                  <div class="nutrition-item col-12 col-md-6">
+                    <div
+                      class="inner d-flex align-items-center bg-body-tertiary p-3 rounded-3 justify-content-between"
+                    >
+                      <div
+                        class="d-flex justify-content-start align-items-center column-gap-3"
+                      >
+                        <span class="fa-stack as-s2 as-sy6 as-fsb6 as-ff1">
+                          <i
+                            class="fa-solid fa-square fa-stack-2x as-yellow100"
+                          ></i>
+                          <i
+                            class="fa-solid fa-wheat-awn as-yellow600 fa-stack-1x as-fsa6 as-ff1 fa-inverse"
+                          ></i>
+                        </span>
+                        <span class="fw-semibold self as-fsa2">Carbohydrates</span>
+                      </div>
+                      <span id="carbs-value" class="d-inline-block fw-bold as-fsa6 ">32g</span>
+                    </div>
+                  </div>
+                  <div class="nutrition-item col-12 col-md-6">
+                    <div
+                      class="inner d-flex align-items-center bg-body-tertiary p-3 rounded-3 justify-content-between"
+                    >
+                      <div
+                        class="d-flex justify-content-start align-items-center column-gap-3"
+                      >
+                        <span class="fa-stack as-s2 as-sy6 as-fsb6 as-ff1">
+                          <i
+                            class="fa-solid fa-square fa-stack-2x as-red100"
+                          ></i>
+                          <i
+                            class="fa-solid fa-droplet as-red600 fa-stack-1x as-fsa6 as-ff1 fa-inverse"
+                          ></i>
+                        </span>
+                        <span class="fw-semibold self as-fsa2">Fat</span>
+                      </div>
+                      <span id="fat-value" class="d-inline-block fw-bold as-fsa6 ">32g</span>
+                    </div>
+                  </div>
+                  <div class="nutrition-item col-12 col-md-6">
+                    <div
+                      class="inner d-flex align-items-center bg-body-tertiary p-3 rounded-3 justify-content-between"
+                    >
+                      <div
+                        class="d-flex justify-content-start align-items-center column-gap-3"
+                      >
+                        <span class="fa-stack as-s2 as-sy6 as-fsb6 as-ff1">
+                          <i
+                            class="fa-solid fa-square fa-stack-2x as-green100"
+                          ></i>
+                          <i
+                            class="fa-solid fa-seedling as-green600 fa-stack-1x as-fsa6 as-ff1 fa-inverse"
+                          ></i>
+                        </span>
+                        <span class="fw-semibold self as-fsa2">Fiber</span>
+                      </div>
+                      <span id="fiber-value" class="d-inline-block fw-bold as-fsa6 ">8g</span>
+                    </div>
+                  </div>
+                  <div class="nutrition-item col-12 col-md-6">
+                    <div
+                      class="inner d-flex align-items-center bg-body-tertiary p-3 rounded-3 justify-content-between"
+                    >
+                      <div
+                        class="d-flex justify-content-start align-items-center column-gap-3"
+                      >
+                        <span class="fa-stack as-s2 as-sy6 as-fsb6 as-ff1">
+                          <i
+                            class="fa-solid fa-square fa-stack-2x as-pink100"
+                          ></i>
+                          <i
+                            class="fa-solid fa-cube as-pink600 fa-stack-1x as-fsa6 as-ff1 fa-inverse"
+                          ></i>
+                        </span>
+                        <span  class="fw-semibold self as-fsa2">Sodium</span>
+                      </div>
+                      <span id="sodium-value" class="d-inline-block fw-bold as-fsa6 ">820mg</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane h-100  show active fade overflow-y-auto"
+                id="chef_tips"
+                role="tabpanel"
+              >
+                <div id="chef-tips-content" class=" d-flex flex-column row-gap-3">
+                  <div
+                    class="as-bgamber50 border-start as-border-amber400 border-4 rounded-3 py-4 px-3 d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <i class="fa-solid fa-check-circle as-amber600 as-fsb1 as-ff1"></i>
+                    <p class="as-gray700 as-fsa2">
+                      This recipe requires more than 45 minutes to prepare.
+                      Plan accordingly!
+                    </p>
+
+                  </div>
+                  <div
+                    class="as-bgamber50 border-start as-border-amber400 border-4 rounded-3 py-4 px-3 d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <i class="fa-solid fa-check-circle as-amber600 as-fsb1 as-ff1"></i>
+                    <p class="as-gray700 as-fsa2">
+                      This recipe requires more than 45 minutes to prepare.
+                      Plan accordingly!
+                    </p>
+
+                  </div>
+                  <div
+                    class="as-bgamber50 border-start as-border-amber400 border-4 rounded-3 py-4 px-3 d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <i class="fa-solid fa-check-circle as-amber600 as-fsb1 as-ff1"></i>
+                    <p class="as-gray700 as-fsa2">
+                      This recipe requires more than 45 minutes to prepare.
+                      Plan accordingly!
+                    </p>
+
+                  </div>
+                  <div
+                    class="as-bgamber50 border-start as-border-amber400 border-4 rounded-3 py-4 px-3 d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <i class="fa-solid fa-check-circle as-amber600 as-fsb1 as-ff1"></i>
+                    <p class="as-gray700 as-fsa2">
+                      This recipe requires more than 45 minutes to prepare.
+                      Plan accordingly!
+                    </p>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="border-top border-1 ">
+              <button type="button" onclick="refreshRecipe()" class="btn refresh-btn rounded-3 text-white d-flex align-items-center justify-content-center p-2 column-gap-2 my-4 shadow as-fsa4 as-ff2-xl fw-medium" >
+                <i class="fa-solid fa-refresh"></i>
+                <span>Try Another Recipe</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
